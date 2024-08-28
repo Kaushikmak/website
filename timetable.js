@@ -18,7 +18,7 @@ class Timetable {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
             this.data = await response.json();
-            console.log(`Loaded data for ${program}:`, this.data); // Debugging
+            console.log(`Loaded data for ${program}:`, this.data);
             this.updateTimetable();
         } catch (error) {
             console.error('Error loading timetable data:', error);
@@ -131,19 +131,17 @@ class Timetable {
         const batchLabs = this.data.labs[batch] || {};
         const color = this.data.batchColors[batch] || '#ffffff';
 
-        // Reset all cell background colors
-        for (let i = 1; i < rows.length; i++) { // Skip header row
+        for (let i = 1; i < rows.length; i++) {
             const cells = rows[i].getElementsByTagName('td');
-            for (let j = 1; j < cells.length; j++) { // Skip time column
+            for (let j = 1; j < cells.length; j++) {
                 cells[j].style.backgroundColor = '';
             }
         }
 
-        // Highlight cells based on batch schedule
         for (let i = 1; i < rows.length; i++) {
             const cells = rows[i].getElementsByTagName('td');
             for (let j = 1; j < cells.length; j++) {
-                const day = rows[0].cells[j].textContent; // Get day name from header
+                const day = rows[0].cells[j].textContent;
                 if (batchLabs[day] === cells[j].textContent) {
                     cells[j].style.backgroundColor = color;
                 }
