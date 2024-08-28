@@ -150,7 +150,7 @@ class Timetable {
     }
 
     updateTimetable() {
-        // Additional logic to update timetable if needed
+        
     }
 }
 
