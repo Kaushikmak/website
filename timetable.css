@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Button Styles */
+button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e10a0a;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Timetable Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #333;
+    color: #ffffff;
+}
+
+table td.lab {
+    background-color: #222;
+}
+
+table td {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* Semester Section */
+#semesterSection {
+    
+    text-align: center;
+}
+
+#semesterSection button {
+    margin: 5px;
+}
+
+
+/* Year Section */
+#yearButtons {
+    text-align: center;
+}
+
+#yearButtons button {
+    margin: 5px;
+}
+
+
+/* Program Buttons */
+#programSection {
+    text-align: center;
+}
+
+#programSection button {
+    margin: 5px;
+}
+
+
+/* Batch Buttons */
+#batchButtons {
+    text-align: center;
+}
+
+#batchButtons button {
+    width: 80px;
+    height: 40px;
+    margin: 5px;
+}
+
+/* Mobile Compatibility */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

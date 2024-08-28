@@ -1,0 +1,58 @@
+{
+    "classes": {
+        "8:00 - 9:00 AM": "Class A",
+        "9:00 - 10:00 AM": "Class B",
+        "10:00 - 11:00 AM": "Class C",
+        "11:00 - 12:00 PM": "Class D",
+        "12:00 - 1:00 PM": "LUNCH",
+        "1:00 - 2:00 PM": "Class E",
+        "2:00 - 3:00 PM": "Class F",
+        "3:00 - 4:00 PM": "Class G",
+        "4:00 - 5:00 PM": "Class H",
+        "5:00 - 6:00 PM": "Class I"
+    },
+    "labs": {
+        "T1": {
+            "Monday": "Class A",
+            "Tuesday": "Class B",
+            "Wednesday": "Class C",
+            "Thursday": "Class D",
+            "Friday": "Class E"
+        },
+        "T2": {
+            "Monday": "Class F",
+            "Tuesday": "Class G",
+            "Wednesday": "Class H",
+            "Thursday": "Class I",
+            "Friday": "Class A"
+        },
+        "T3": {
+            "Monday": "Class B",
+            "Tuesday": "Class C",
+            "Wednesday": "Class D",
+            "Thursday": "Class E",
+            "Friday": "Class F"
+        },
+        "T4": {
+            "Monday": "Class G",
+            "Tuesday": "Class H",
+            "Wednesday": "Class I",
+            "Thursday": "Class A",
+            "Friday": "Class B"
+        },
+        "T5": {
+            "Monday": "Class C",
+            "Tuesday": "Class D",
+            "Wednesday": "Class E",
+            "Thursday": "Class F",
+            "Friday": "Class G"
+        }
+    },
+    "batchColors": {
+        "T1": "#ff9999",
+        "T2": "#99ff99",
+        "T3": "#9999ff",
+        "T4": "#ffff99",
+        "T5": "#ff99ff"
+    }
+}

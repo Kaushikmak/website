@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EEE Department Timetable</h1>
+
+        <div id="programSection">
+            <h2>Select Program</h2>
+            <button>PhD</button>
+            <button>MTech</button>
+            <button>BTech</button>
+        </div>
+
+        <div id="yearSection" class="hidden">
+            <h2>Select Year</h2>
+            <div id="yearButtons"></div>
+        </div>
+
+        <div id="semesterSection" class="hidden">
+            <h2>Select Semester</h2>
+            <button>Odd</button>
+            <button>Even</button>
+        </div>
+
+        <div id="timetableSection" class="hidden">
+            <h2>Timetable</h2>
+            <table id="timetable">
+                <!-- Timetable will be populated by JavaScript -->
+            </table>
+        </div>
+
+        <div id="batchButtons" class="hidden">
+            <h2>Select Batch</h2>
+            <button id="batchT1" style="background-color: #ff9999;">T1</button>
+            <button id="batchT2" style="background-color: #99ff99;">T2</button>
+            <button id="batchT3" style="background-color: #9999ff;">T3</button>
+            <button id="batchT4" style="background-color: #ffff99;">T4</button>
+            <button id="batchT5" style="background-color: #ff99ff;">T5</button>
+        </div>
+    </div>
+
+    <script src="timetable.js"></script>
+</body>
+</html>
